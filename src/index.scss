@@ -1,0 +1,230 @@
+$primary: #4d4d4d !important;
+$secondary: #999999 !important;
+$gold: #f1a954 !important;
+$goldLight: #ffb259 !important;
+
+body {
+  background-color: #f8f8f8 !important;
+}
+.bg-grey {
+  background: $primary;
+}
+.action {
+  background: $gold;
+}
+p.text-warning {
+  color: $gold;
+}
+.dine-cover {
+  background-image: url("http://theoldginhouse.com/pages/wp-content/uploads/2017/09/IMG_0077-1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  object-fit: cover;
+  background-position: bottom;
+}
+.room-cover {
+  background-image: url("http://theoldginhouse.com/pages/wp-content/uploads/2017/09/OGH-Pool1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  object-fit: cover;
+  background-position: bottom;
+}
+
+.sidenav {
+  height: 100%;
+  width: 225px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  overflow-x: hidden;
+}
+.loadingbar {
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+}
+.main {
+  margin-left: 225px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {
+    padding-top: 15px;
+  }
+  .sidenav a {
+    font-size: 18px;
+  }
+}
+
+.navbar-brand {
+  margin: 0px 60px 0px 75px !important;
+}
+.nav-item {
+  text-transform: uppercase;
+  border-right: 1px solid #d9d9d9 !important;
+  &:nth-last-child(2) {
+    border-right: 0px !important;
+  }
+  &:last-child {
+    background: $gold;
+    border-right: 0px !important;
+  }
+  &:first-child {
+    border-left: 1px solid #d9d9d9 !important;
+  }
+  &:active,
+  .active {
+    color: $secondary;
+  }
+  .nav-link {
+    padding: 10px 30px 10px 30px !important;
+    margin: 0px !important;
+    color: #fff !important;
+    transition-property: all;
+    transition-duration: 200ms;
+    display: block;
+    text-decoration: none;
+    &:hover {
+      color: $secondary;
+    }
+  }
+  .book-now {
+    background: $gold;
+    font-weight: bold;
+    color: #fff !important;
+    transition-property: all;
+    transition-duration: 200ms;
+  }
+}
+ul.list-group-horizontal {
+  li.list-group-item {
+    background: none !important;
+    border: 0px !important;
+    margin-left: 8px !important;
+    padding: 0px !important;
+    &:first-child {
+      margin-left: 0px !important;
+    }
+    a {
+      background: $gold;
+      color: #fff;
+      padding: 10px 40px 10px 40px;
+      transition-property: all;
+      transition-duration: 200ms;
+      &:hover {
+        background: $goldLight;
+      }
+    }
+  }
+}
+a.btn-warning {
+  background: $gold;
+  color: #fff;
+  padding: 10px 40px 10px 40px;
+  transition-property: all;
+  transition-duration: 200ms;
+  &:hover {
+    background: $goldLight;
+  }
+}
+
+.image-caption {
+  color: #fff;
+  text-shadow: 1px 1px 20px black;
+
+  font-weight: bold;
+  left: 15px;
+  z-index: 2;
+  line-height: 1.8;
+  &:hover + .filter {
+    filter: brightness(50%);
+  }
+  &:hover + h2.caption-title {
+    padding-right: 100px !important;
+    color: $gold;
+  }
+  @media (max-width: 1024px) {
+    top: 0px;
+  }
+}
+h2.caption-title {
+  transition-property: all;
+  transition-duration: 300ms;
+  &:hover {
+    margin-right: 100px;
+  }
+}
+
+.img-responsive {
+  width: 100%;
+}
+.image-item {
+  img {
+    filter: brightness(80%);
+    transition-property: all;
+    transition-duration: 400ms;
+    &:hover {
+      filter: brightness(50%);
+    }
+  }
+}
+
+// footer
+
+.context-dark,
+.bg-gray-dark,
+.bg-primary {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.footer-classic a,
+.footer-classic a:focus,
+.footer-classic a:active {
+  color: #ffffff;
+  &:hover {
+    color: $secondary;
+  }
+}
+.nav-list li {
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.nav-list li a:hover:before {
+  margin-left: 0;
+  opacity: 1;
+  visibility: visible;
+}
+
+ul,
+ol {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.nav-list li a:before {
+  content: "\f14f";
+  font: 400 21px/1 "Material Design Icons";
+  color: #4d6de6;
+  display: inline-block;
+  vertical-align: baseline;
+  margin-left: -28px;
+  margin-right: 7px;
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.22s ease;
+}
+
+.pointer {
+  cursor: pointer;
+}
+
+.navbar-brand {
+  z-index: 10000 !important;
+  left: 10 !important;
+  top: 0 !important;
+  position: absolute !important;
+}
